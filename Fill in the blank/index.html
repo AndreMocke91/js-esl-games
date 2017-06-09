@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<link href="css/gameStyle.css" rel="stylesheet" type="text/css">
+		<link media="screen and (max-width: 640px)" href="css/gameStylePortrait.css" rel="stylesheet" type="text/css">
+		<script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
+		<script src="js/game.js" type="text/javascript"></script>		
+		<link rel="stylesheet" href="PRINC/font.css">
+	</head>
+	
+	<body>	
+		<div class="mainContainer">
+			
+			<div class="lightBox" id="thumbsUpLightBox" onclick="hideThumbsUpLightBox()">
+				<img src="img/thumbsup.jpg">
+			</div>
+			
+			<div class="lightBox" id="thumbsDownLightBox" onclick="hideThumbsDownLightBox()">
+				<img src="img/thumbsdown.jpg">
+			</div>
+			
+			<div class="questionTitle">
+					<h1 id="question"></h1>
+
+				</div>
+			
+			<div class="leftContainer">				
+				
+				<div id="answerContainer">
+				
+				</div>
+				
+			</div>
+			
+			<div class="rightContainer">				
+				<div id="imgSpot">
+				
+				</div>
+			</div>
+		
+		<audio controls id="correctSound" style="display: none;">
+			<source src="audio/correct.mp3" type="audio/mpeg" id="correctSound">			
+		</audio>
+		
+		<audio controls id="incorrectSound" style="display: none;">			
+			<source src="audio/incorrect.mp3" type="audio/mpeg" >
+		</audio>
+		
+		</div>
+	</body>	
+	
+</html>

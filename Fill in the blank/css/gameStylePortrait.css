@@ -1,0 +1,13 @@
+.questionTitle h1{	
+	font-size: 80px;
+}
+
+.answerButton h2{	
+	font-size: 60px;
+}
+
+.answerButton{	
+	margin: 1%;
+	padding: 3% 3% 3% 3%;
+	width: 39%;		
+}
