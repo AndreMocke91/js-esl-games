@@ -1,0 +1,217 @@
+body{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	
+	background-image: url('../img/aroundtheworldbackground.jpg');
+	background-attachment: fixed;
+	
+}
+
+.badLight{
+	transition: 0.5s;
+	-webkit-transition: 0.5s;
+	box-shadow: inset 0 0 10px 10px red;	
+}
+
+#keyInput{
+	opacity: 0.4;
+}
+
+#board{
+	position: relative;
+	
+	top: 50%;
+	margin-top: 20px;
+	left:50%;
+	margin-left: -500px;
+	
+	width: 1000px;
+	height: 600px;
+	
+	background: rgba(50,250,250,0.5);
+}
+
+.slot{
+	position: relative;
+	float: left;
+	
+	display: inline-block;
+	
+	background: rgba(50,50,50,0.5);
+	
+	height: 120px;
+	width: 200px;
+}
+
+.slot img{
+	position: relative;
+	float: left;
+	
+	width: 100%;
+	height: 100%;
+}
+
+.slot .updownroad{
+	position: relative;
+	float: left;
+	
+	width: 100%;
+	height: 100%;
+	
+	background: url(../img/updownroad.png);
+	background-size: 100% 100%;
+}
+
+.slot .leftrightroad{
+	position: relative;
+	float: left;
+	
+	width: 100%;
+	height: 100%;
+	
+	background: url(../img/leftrightroad.png);
+	background-size: 100% 100%;
+}
+
+.slot .leftdownturnroad{
+	position: relative;
+	float: left;
+	
+	width: 100%;
+	height: 100%;
+	
+	background: url(../img/leftdownturnroad.png);
+	background-size: 100% 100%;
+}
+
+.slot .uprightturnroad{
+	position: relative;
+	float: left;
+	
+	width: 100%;
+	height: 100%;
+	
+	background: url(../img/uprightturnroad.png);
+	background-size: 100% 100%;
+}
+
+.slot .leftrighttjunctionroad{
+	position: relative;
+	float: left;
+	
+	width: 100%;
+	height: 100%;
+	
+	background: url(../img/leftrighttjunctionroad.png);
+	background-size: 100% 100%;
+}
+
+.slot .updowntjunctionroad{
+	position: relative;
+	float: left;
+	
+	width: 100%;
+	height: 100%;
+	
+	background: url(../img/updowntjunctionroad.png);
+	background-size: 100% 100%;
+}
+
+.slot .junctionroad{
+	position: relative;
+	float: left;
+	
+	width: 100%;
+	height: 100%;
+	
+	background: url(../img/junctionroad.png);
+	background-size: 100% 100%;
+}
+
+#marker{
+	position: absolute;
+	float: left;
+
+	width: 200px;
+	height: 120px;
+	
+	z-index: 99;
+}
+
+#faceoverlay{
+	position: absolute;
+
+	width: 35px;
+	height: 35px;
+
+	left: 40%;
+	top: 4%;	
+}
+
+.walker_walking{
+	background: url(../img/walker.gif);
+	background-size: 50% 95%;
+	background-position: 40% 80%;
+	background-repeat: no-repeat;
+}
+
+.walker_standing{
+	background: url(../img/walker_standing.png);
+	background-size: 50% 95%;
+	background-position: 40% 80%;
+	background-repeat: no-repeat;
+
+}
+
+.flip{
+	-moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+.rotate180{	
+	-webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.upfacing{
+	box-shadow: 0px 20px 5px rgba(50,250,50,0.8);
+}
+
+.target{
+	box-shadow: 0 0 10px 10px rgba(50,250,50,0.8);
+	z-index: 80;
+}
+
+.lightBox{
+	position: absolute;
+	width: 200px;
+	height: 120px;
+	border-radius: 50px;
+
+	z-index: 101;
+}
+
+.rightfacing{
+	box-shadow: 10px 0px 1px 0px lime;
+}
+
+.leftfacing{
+	box-shadow: -10px 0px 1px 0px lime;
+}
+
+.downfacing{
+	box-shadow: 0px 10px 1px 0px lime;
+}
+
+.upfacing{
+	box-shadow: 0px -10px 1px 0px lime;
+}
+

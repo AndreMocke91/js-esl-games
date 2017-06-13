@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="css/mockStyle.css">
+		<link type="text/css" rel="stylesheet" href="css/faces.css">
+		
+
+		<script src="js/jquery-3.1.0.js"></script>
+		<script src="js/faces.js"></script>	
+		<script src="js/movement.js"></script>		
+		
+	</head>
+	
+	<body id="container" >
+		<div id="board" >		
+
+			<div id="marker" class="walker_standing flip" onclick="moveRight()">
+				<div id="faceoverlay" class="happyface flip"> </div>
+				<div class="lightBox rightfacing flip"></div>
+			</div>
+			<!-- SLOT 1 -->
+			<div class="slot">
+				<img src="img/1.jpg">
+			</div>
+			
+			<!-- SLOT 2 -->
+			<div class="slot">
+				<div class="updowntjunctionroad"></div>
+			</div>
+			
+			<!-- SLOT 3 -->
+			<div class="slot">
+				<img src="img/2.jpg">
+			</div>
+			
+			<!-- SLOT 4 -->
+			<div class="slot">
+				<img src="img/3.jpg">
+			</div>
+			
+			<!-- SLOT 5 -->
+			<div class="slot">
+				<div class="updownroad"></div>
+			</div>
+			
+			<!-- SLOT 6 -->
+			<div class="slot">
+				<img src="img/4.jpg">
+			</div>
+			
+			<!-- SLOT 7 -->
+			<div class="slot">
+				<div class="junctionroad rotate180"></div>
+			</div>
+			
+			<!-- SLOT 8 -->
+			<div class="slot">
+				<div class="leftrightroad"></div>
+			</div>
+			
+			<!-- SLOT 9 -->
+			<div class="slot">
+				<div class="junctionroad rotate180"></div>
+			</div>
+			
+			<!-- SLOT 10 -->
+			<div class="slot">
+				<div class="leftrighttjunctionroad"></div>
+			</div>
+			<!-- SLOT 11 -->
+			<div class="slot">
+				<img src="img/5.jpg">
+			</div>
+			
+			<!-- SLOT 12 -->
+			<div class="slot">
+				<div class="updownroad"></div>
+			</div>
+			
+			<!-- SLOT 13 -->
+			<div class="slot">
+				<img src="img/6.jpg">
+			</div>
+			
+			<!-- SLOT 14 -->
+			<div class="slot">
+				<img src="img/7.jpg">
+			</div>
+			
+			<!-- SLOT 15 -->
+			<div class="slot">
+				<div class="updownroad"></div>
+			</div>
+			
+			<!-- SLOT 16 -->
+			<div class="slot">
+				<div class="leftrighttjunctionroad rotate180"></div>
+			</div>
+			
+			<!-- SLOT 17 -->
+			<div class="slot">
+				<div class="junctionroad"></div>
+			</div>
+			
+			<!-- SLOT 18 -->
+			<div class="slot">
+				<img src="img/8.jpg">
+			</div>
+			
+			<!-- SLOT 19 -->
+			<div class="slot">
+				<img src="img/9.jpg">
+			</div>
+			
+			<!-- SLOT 20 -->
+			<div class="slot">
+				<div class="leftrighttjunctionroad"></div>
+			</div>
+			
+			<!-- SLOT 21 -->
+			<div class="slot">
+				<img src="img/10.jpg">
+			</div>
+			
+			<!-- SLOT 22 -->
+			<div class="slot">
+				<div class="updownroad"></div>
+			</div>
+			
+			<!-- SLOT 23 -->
+			<div class="slot">
+				<img src="img/11.jpg">
+			</div>
+			
+			<!-- SLOT 24 -->
+			<div class="slot">
+				<img src="img/12.jpg">
+			</div>
+			
+			<!-- SLOT 25 -->
+			<div class="slot">
+				<div class="leftdownturnroad rotate180 "></div>
+			</div>			
+			
+		</div>
+	</body>
+
+	<script>
+			$( "#container" ).keydown(function(event) {
+				console.log("key code pressed:" + event.which);				
+
+				if( !$(".target").length && event.which != 116 )
+				{
+					console.log("target not selected");					
+				}
+				else{
+
+					if(event.which === 39)
+ 					turnRight();
+	 				if(event.which === 40)
+	 				{
+	 					turnRight();
+	 					turnRight();
+	 				}
+	 				if(event.which === 38)
+	 					moveForward();
+	 				if(event.which === 37)
+	 					turnLeft();	 				
+				}
+
+ 				if(event.which === 67)
+ 					checkMove();
+
+ 				if(event.which === 76)
+ 					lolface();
+
+ 				if(event.which === 70)
+ 					frustratedface();
+
+ 				if(event.which === 72)
+ 					happyface();
+
+ 				if(event.which === 71)
+ 					girlface();
+
+ 				if(event.which === 77)
+ 					gentlemanface();
+ 			})
+	</script>
+
+	<script type="text/javascript">
+		$(".slot").dblclick( function(event){
+			if(event.which === 1)
+			{
+				toggleTarget(this);
+			}
+			
+		});
+
+		$(".slot").mousedown( function(event){			
+			if(event.which === 2)
+			{
+				moveMarker(this);
+			}
+			
+		})
+
+
+	</script>
+</html>

@@ -1,0 +1,47 @@
+.lolface{
+	background-image: url(../img/lolface.png);
+	background-size: 100% 100%;
+	z-index: 102;
+}
+
+.girlface{
+	background-image: url(../img/girlface.png);
+	background-size: 100% 100%;
+}
+
+.gentlemanface{
+	background-image: url(../img/gentlemanface.png);
+	background-size: 100% 100%;
+	z-index: 102;
+}
+
+.frustratedface{
+	background-image: url(../img/frustratedface.png);
+	background-size: 100% 100%;
+	z-index: 102;
+}
+
+.happyface{
+	background-image: url(../img/happyface.png);
+	background-size: 100% 100%;
+}
+
+.spinner{
+	animation-name: spin;
+	animation-duration: 4s;
+	
+}
+
+@keyframes spin{
+	0%{
+		-ms-transform: rotate(0deg); /* IE 9 */
+        -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    	transform: rotate(0deg);
+	}	
+
+	100%{
+		-ms-transform: rotate(1080deg); /* IE 9 */
+        -webkit-transform: rotate(1080deg); /* Chrome, Safari, Opera */
+    	transform: rotate(1080deg);
+	}
+}
